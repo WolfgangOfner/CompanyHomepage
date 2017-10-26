@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Firmenwebseite</title>
+    <link rel="stylesheet" type="text/css" href="Scripts/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="Scripts/CSS.css">
+    <link rel="stylesheet" type="text/css" href="Scripts/jquery-ui-1.10.4.custom.css" />
+    <script type="text/javascript" src="Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-1.6.4.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-ui-1.10.4.custom.js"></script>
+
+
+</head>
+
+<body>
+    <header class="hidden-xs">
+        <div class="FHLogo">
+            <img src="./Images/FH.jpg" alt="FH Logo" title="FH Logo" width="85" height="69" />
+        </div>
+
+        <h1>FH - Wiener Neustadt...</h1>
+    </header>
+
+    <header class="visible-xs">
+        <!-- on small devices display only logo -->
+        <div class="FHLogoSmall">
+        </div>
+    </header>
+
+    <nav>
+        <div class="visible-md visible-lg">
+            <table>
+                <thead></thead>
+                <tr>
+                    <td class="Orange"></td>
+                    <td class="Blue"><a href="#">Menü 1</a> | <a href="#">Menü 2</a> | <a href="#">Menü 3</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="hidden-lg hidden-md">
+            <!-- on smaller devices only blue navbar -->
+            <table>
+                <thead></thead>
+                <tr>
+                    <td class="BlueSmall"><a href="#">Menü 1</a> | <a href="#">Menü 2</a> | <a href="#">Menü 3</a></td>
+                </tr>
+            </table>
+        </div>
+    </nav>
+
+    <section>
+        <aside class="col-md-2">
+            <div id="side">
+                <table class="Welcome">
+                    <thead>
+                        <tr>
+                            <th><input type="button" id="btnClose" value="X" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="welcomeText">Willkommen!</td>
+                        </tr>
+                        <tr>
+                            <td id="geo"> </td>             <!--contains coordinates-->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </aside>
+        <article class="col-md-4 textOne">
+            <h2>Überschrift</h2>
+
+            Chapter too parties its letters nor. Cheerful but whatever ladyship disposed yet judgment. Lasted answer oppose to ye months no esteem.
+            Branched is on an ecstatic directly it. Put off continue you denoting returned juvenile. Looked person sister result mr to. Replied demands charmed
+            do viewing ye colonel to so. Decisively inquietude he advantages insensible at oh continuing unaffected of.
+            <br />
+            Is post each that just leaf no. He connection interested so we an sympathize advantages. To said is it shed want do. Occasional middletons everything
+            so to. Have spot part for his quit may. Enable it is square my an regard. Often merit stuff first oh up hills as he. Servants contempt as
+            although addition dashwood is procured. Interest in yourself an do of numerous feelings cheerful confined.
+            <br />
+            As collected deficient objection by it discovery sincerity curiosity. Quiet decay who round three world whole has mrs man. Built the china there
+            tried jokes which gay why. Assure in adieus wicket it is. But spoke round point and one joy. Offending her moonlight men sweetness see unwilling.
+            Often of it tears whole oh balls share an.
+        </article>
+
+        <article class="col-md-4">
+            <h2>Überschrift</h2>
+            Chapter too parties its letters nor. Cheerful but whatever ladyship disposed yet judgment. Lasted answer oppose to ye months no esteem.
+            Branched is on an ecstatic directly it. Put off continue you denoting returned juvenile. Looked person sister result mr to. Replied demands charmed
+            do viewing ye colonel to so. Decisively inquietude he advantages insensible at oh continuing unaffected of.
+            <br />
+            Is post each that just leaf no. He connection interested so we an sympathize advantages. To said is it shed want do. Occasional middletons everything
+            so to. Have spot part for his quit may. Enable it is square my an regard. Often merit stuff first oh up hills as he. Servants contempt as
+            although addition dashwood is procured. Interest in yourself an do of numerous feelings cheerful confined.
+            <br />
+            As collected deficient objection by it discovery sincerity curiosity. Quiet decay who round three world whole has mrs man. Built the china there
+            tried jokes which gay why. Assure in adieus wicket it is. But spoke round point and one joy. Offending her moonlight men sweetness see unwilling.
+            Often of it tears whole oh balls share an.
+            <br />
+            <br />
+            Is post each that just leaf no. He connection interested so we an sympathize advantages. To said is it shed want do. Occasional middletons everything
+            so to. Have spot part for his quit may. Enable it is square my an regard. Often merit stuff first oh up hills as he. Servants contempt as
+            although addition dashwood is procured. Interest in yourself an do of numerous feelings cheerful confined.
+            <br />
+            As collected deficient objection by it discovery sincerity curiosity. Quiet decay who round three world whole has mrs man. Built the china there
+            tried jokes which gay why. Assure in adieus wicket it is. But spoke round point and one joy. Offending her moonlight men sweetness see unwilling.
+            Often of it tears whole oh balls share an.
+        </article>
+    </section>
+
+    <section>
+        <div class="col-md-12 " style="clear:both">
+            <!-- clear both necessary to make sure formular is under section if window is small -->
+            <div class="col-md-2">
+                <!-- placeholder -->
+            </div>
+
+            <div class="col-md-8">
+                <form action="/auswertung" method="post" class="">
+                    <fieldset>
+                        <legend>Personalia:</legend>
+                        <div class="label hidden-xs hidden-sm">
+                            <label for="vname">Vorname:</label><br />
+                            <input id="tbvname" required /> <br />
+                            <label for="nname">Nachname:</label><br />
+                            <input id="tbnname" required /> <br />
+                            <label for="email">Email:</label><br />
+                            <input id="tbemail" type="email" required /> <br />
+                            <label for="adress">Adresse:</label><br />
+                            <input id="tbadress" required /> <br />
+                            <label for="zip">PLZ:</label><br />
+                            <input id="tbzip" type="number" required min="1000" max="9999" /> <br />
+                            <label for="city">Ort:</label><br />
+                            <input id="tbcity" type="text" required /> <br />
+                            <label for="birthday">Geburtstag:</label><br />
+                            <input id="tbbirthday" required /><br />
+                            <label for="passwort">Passwort:</label><br />
+                            <input id="tbpassword" type="password" required /><br />
+                            <input type="submit" id="btnSubmit" value="Submit" />
+                        </div>
+
+                        <div class="labelSmall visible-xs visible-sm">
+                            <label for="vname">Vorname:</label><br />
+                            <input id="tbvname" required /> <br />
+                            <label for="nname">Nachname:</label><br />
+                            <input id="tbnname" required /> <br />
+                            <label for="email">Email:</label><br />
+                            <input id="tbemail" type="email" required /> <br />
+                            <label for="adress">Adresse:</label><br />
+                            <input id="tbadress" required /> <br />
+                            <label for="zip">PLZ:</label><br />
+                            <input id="tbzip" type="number" required min="1000" max="9999" /> <br />
+                            <label for="city">Ort:</label><br />
+                            <input id="tbcity" type="text" required /> <br />
+                            <label for="birthday">Geburtstag:</label><br />
+                            <input id="tbbirthdaySmall" required /><br />
+                            <label for="passwort">Passwort:</label><br />
+                            <input id="tbpassword" type="password" required /><br />
+                            <input type="submit" id="btnSubmit" value="Submit" />
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="col-md-12 hidden-xs footerBig">
+        <table>
+            <tr>
+                <th><label id="counter"></label></th>
+            </tr>
+        </table>
+    </footer>
+
+    <footer class="col-md-12 visible-xs footerSmall">
+        <table>
+            <tr>
+                <th><label id="counterSmall"></label></th>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+﻿body {
+    font-family: Verdana;
+}
+
+* {
+    color:black;                                /*needed for datepicker*/
+}
+
+.FHLogo {
+    float: left;
+    margin-right: 1em;
+}
+
+.FHLogoSmall {
+    height: 5em;
+    background: url(images/FH.jpg);
+    background-size: 100% 100%;
+}
+
+header h1 {
+    color: #808080;
+    padding-top: 0.2em;
+    font-family: 'Ceviche One', cursive; /*Google Font*/
+}
+
+header {
+    margin: 1em;
+}
+
+nav {
+    clear: both;
+}
+
+    nav table {
+        width: 100%;
+    }
+
+.Orange {
+    background: #ff6a00;
+    width: 5%;
+    height: 1em;
+}
+
+nav a:link, a:visited, a:hover, a:active { /*color all links white*/
+    COLOR: #ffffff;
+}
+
+.Blue {
+    background: #0094ff;
+    text-align: left;
+    padding-left: 0.5em;
+    width: 95%;
+    height: 1em;
+    text-shadow: 8px 8px 1px black;
+}
+
+.BlueSmall {
+    background: #0094ff;
+    text-align: center;
+    width: 95%;
+    height: 1em;
+    text-shadow: 8px 8px 1px black;
+}
+
+aside {
+    padding: 1em;
+}
+
+#side {
+    border: solid;
+    border-color: black;
+    background-color: darkorange;
+    border-radius: 1em;
+    box-shadow: 5px 5px 5px;
+}
+
+.Welcome {
+    width: 100%;
+}
+
+    .Welcome thead tr th {
+        text-align: right;
+    }
+
+#btnclose {
+    width: 2em;
+    border-radius: 1em;
+}
+
+#welcomeText {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px lightgrey;
+    text-align: center;
+    -ms-transform: rotate(30deg); /*rotate Willkommen*/ /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    transform: rotate(30deg);
+}
+
+#geo {
+    text-align: center;
+    color: white;
+    font-size: small;
+    height: 10em;
+}
+
+.textOne {
+    background: url(images/Flower.jpg);
+    background-size: 100% 100%;
+}
+
+section h2 {
+    font-size: 1.5em;
+    text-shadow: 8px 8px 1px black;
+}
+
+.label, .labelSmall {
+    color: black;
+}
+
+footer {
+    margin-top: 3em;
+}
+
+    footer #counter {
+        padding-left: 1em;
+    }
+
+.footerBig table {
+    background: #0094ff;
+    border-radius: 40px;
+    height: 1.5em;
+    width: 98%;
+    position: fixed;
+    bottom: 0em;
+    align-content: center;
+}
+
+.footerSmall table {
+    background: #0094ff;
+    width: 100%;
+    height: 1.5em;
+    position: fixed;
+    bottom: 0em;
+}
